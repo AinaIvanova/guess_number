@@ -2,9 +2,6 @@
 # из модуля random.
 from random import randint
 
-welcome_text = 'Guess the number from 1 to 100'
-def say_hello():
-    print('Привет, Практикум!')
 
 # Получаем случайное число в диапазоне от 1 до 100.
 number = randint(1, 100)
@@ -21,12 +18,12 @@ def main():
             print('Ваше число меньше того, что загадано.')
         
         # Если число больше загаданного...
-        if guess > number:
+        elif guess > number:
             # ...выводим сообщение.
             print('Ваше число больше того, что загадано.')
         
         # Если число угадано...
-        if guess == number:
+        elif guess == number:
             # ...прерываем выполнение программы и...
             break
 
